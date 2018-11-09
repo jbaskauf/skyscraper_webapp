@@ -1,0 +1,118 @@
+//CSS style sheet for the materials page, in which a list of the materials in the database is shown
+//the body of the page is centered
+body {
+    padding:0px;
+    margin:0px;
+    font-family: palatino linotype;
+    text-align: center;
+}
+
+//the table has alternating white and light blue rows, with dark blue links 
+table {
+    padding:0px;
+    margin:0px;
+    font-family: palatino linotype;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-decoration: underline;
+    text-align: center;
+    color: #004a99
+}
+
+
+a {
+    color: #004a99
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #D8D8D8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+tr:nth-child(even){background-color:#d6eaff}
+tr:nth-child(odd){background-color:white}
+
+table, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    vertical-align: middle;
+}
+
+//At the top left of the page is a button with the link to the home page
+
+.header {
+    font-family: palatino linotype;
+    text-align: center;
+}
+
+.home-button{
+    font-family: palatino linotype;
+    justify-content: left;
+    float:left;
+    width: 20%;
+}
+
+button {
+    height: 40px;
+    width: 15%;
+    background-color: #4a88e6;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: palatino linotype;
+}
+
+button:hover {
+    background-color: #1851a8;
+}
+
+//At the top right of the page is a search box
+
+#search-button {
+    width: 40px;
+}
+
+#search-box {
+    width: 55%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: palatino linotype;
+}
+
+.icon {
+    width: 60%;
+    float: left;
+}
+
+.search-container {
+    float: right;
+    width: 40%;
+}
+
+#materials {
+    background-color: #4a88e6;
+    color: white;
+    clear: both;
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+Ellie Mamantov and Jessie Baskauf
+
+User Stories:
+
+Person looks up a ranking of the tallest buildings in the United States.
+Person looks up a ranking of the tallest buildings in Chicago.
+Person looks up a ranking of the tallest buildings in New York.
+Person searches for information about the One World Trade Center (height, year constructed, location, number of floors).
+Person searches for a timeline of when different skyscrapers in the United States (or Chicago, or New York) were built. 
+Person looks up an alphabetical list of skyscrapers in United States  (or Chicago, or New York).
+Person searches for a list of skyscrapers completed in 1952.
+Person searches for a list of skyscrapers that started being built in 1940.
+Person searches for a list of skyscrapers completed between 1940 and 1960.
+Person searches for a list of skyscrapers in Minnesota that were built in 1960.
+Person looks up how many skyscrapers are in Minnesota. 
+Person searches for a list of skyscrapers that are under construction.
+Person searches for a list of never completed skyscrapers.
+Person looks up a ranking of buildings by number of floors in the United States.
+Person searches for a list of skyscrapers that people can live in.
+Person searches for a list of skyscrapers that serve as hotels. 
+Person searches for a list of skyscrapers that took 8 years to build.
+Person searches for a list of skyscrapers built out of steel. 
+Person searches for skyscrapers in Northfield, MN and finds none.
+Person searches for information about a skyscraper that doesn’t exist and finds nothing.

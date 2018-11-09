@@ -1,0 +1,111 @@
+//CSS style sheet for the search results page, in which a list of skyscrapers that contain the search string are displayed as links
+//the body of the page is centered
+body {
+    padding:0px;
+    margin:0px;
+    font-family: palatino linotype;
+    text-align: center;
+}
+
+//The table that contains the search results is encapsulated in a light blue box. The table's rows are not differentiated by anything  other than the links that are contained in them
+tr{
+    background-color: #d6eaff;
+}
+
+td {
+    text-decoration: underline;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #0B86B5
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #D8D8D8;
+    text-decoration;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#results_table{
+    margin:0px;
+    padding;0px;
+    border: 0;
+    font-family: palatino linotype;
+    border-collapse: collapse;
+    width: 30%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+//top left of the page has a home button
+.header {
+    font-family: palatino linotype;
+    text-align: center;
+}
+
+.home-button{
+    font-family: palatino linotype;
+    justify-content: left;
+    float:left;
+    width: 20%;
+}
+
+button {
+    height: 40px;
+    width: 15%;
+    background-color: #4a88e6;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: palatino linotype;
+}
+
+button:hover {
+    background-color: #1851a8;
+}
+
+//top right of the page has a search bar
+#search-button {
+    width: 40px;
+}
+
+#search-box {
+    width: 55%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: palatino linotype;
+}
+
+.icon {
+    width: 60%;
+    float: left;
+}
+
+.search-container {
+    float: right;
+    width: 40%;
+}
+
+#searches {
+    background-color: #4a88e6;
+    color: white;
+    clear: both;
+    width: 100%;
+}

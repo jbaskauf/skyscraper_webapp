@@ -1,0 +1,174 @@
+//CSS stylesheet for skyscraper pages, which provide detailed information about a single skyscraper
+//The name and city of the skyscraper are displayed on the top of the page
+#name{
+    padding-top:60px;
+    margin:0px;
+    font-family: palatino linotype;
+    text-align: center;
+    font-size: 30px;
+    background-color: #d6eaff;
+}
+
+//Basic facts about the skyscraper are displayed in a table with a dark blue header
+#facts_results_table{
+    font-size:20px;
+    font-family: palatino linotype;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right; auto;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#facts_results_table td {
+    border-left: 1px solid black;
+} 
+
+#facts_results_table th {
+    border-left:1px solid black;
+}
+
+#facts_results_table td:first-child {
+    border-left: none; 
+}
+
+#facts_results_table tr{
+    height: 80px;
+    background-color: #d6eaff
+}
+
+
+#facts_results_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4a88e6;
+    color: white;
+}
+
+//The skyscraper's purposes are displayed in a table below the other basic facts table and beside the materials table. If the skyscraper has more than one purpose, the table has alternating colors in its rows.
+#purposes_table{
+    font-size: 20px;
+    float: left;
+    font-family: palatino linotype;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right; auto;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#purposes_table th{
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom:12px;
+    text-align: center;
+    background-color: #4a88e6;
+    color: white;
+}
+
+#materials_table{
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float: right;
+    font-family: palatino linotype;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right; auto;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#materials_table tr{
+    height: 80px;
+    background-color: #d6eaff
+}
+
+#purposes_table tr{
+    height:80px;
+}
+
+#purposes_table tr:nth-child(odd){background-color: #d6eaff}
+#purposes_table tr:nth-child(even){background-color: white}
+
+#materials_table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4a88e6;
+    color: white;
+}
+
+.facts{
+    padding: 20px;
+}
+.facts-lists{
+    padding: 20px;
+}
+
+
+html, body{
+    text-align: center;
+    width: 100%;
+}
+
+//The top left of the page has a home button
+.header {
+    font-family: palatino linotype;
+    text-align: center;
+}
+
+.home-button{
+    font-family: palatino linotype;
+    justify-content: left;
+    float:left;
+    width: 20%;
+}
+
+button {
+    height: 40px;
+    width: 15%;
+    background-color: #4a88e6;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: palatino linotype;
+}
+
+button:hover {
+    background-color: #1851a8;
+}
+//the top right of the page has a search bar
+#search-button {
+    width: 40px;
+}
+
+#search-box {
+    width: 55%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: palatino linotype;
+}
+
+.icon {
+    width: 60%;
+    float: left;
+}
+
+.search-container {
+    float: right;
+    width: 40%;
+}
+
+#back_button{
+    float: left;
+}

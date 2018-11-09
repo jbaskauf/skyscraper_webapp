@@ -1,0 +1,88 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='rankings.css') }}" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>var api_port = {{ api_port }};</script>
+    <script type="text/javascript" src="{{ url_for('static', filename='rankings.js') }}" defer></script>
+    <title>HighRise</title>
+</head>
+<body>
+    <div class="header" id='header-bar'>
+        <div class=icon>
+            <a href="/"><button class="home-button">HighRise</button></a>
+        </div>
+        <div class="search-container">
+                <input type="text" placeholder="Search for a skyscraper..." id="search-box">
+                <button id = 'search-button' onclick="getSearchResults()">Go</button>
+        </div>
+    </div>
+    <div class='header' id='rankings'><h1>Rankings</h1></div>
+
+    <div class="row">
+        <div class="column left">
+            <button id="height_button" class="orderBtn">Height</button>
+            <button id="numfloors_button" class="orderBtn">Number of floors</button>
+            <button id="alphabetical_button" class="orderBtn">Alphabetical</button>
+            <button id="started_year_button" class="orderBtn">Year started</button>
+            <button id="completed_year_button" class="orderBtn">Year completed</button>
+            <p><table id="results_table"></table></p>
+        </div>
+        <div class="column right">
+            <div class="rankings-refinement" id="ranking-refinement-menus">
+                <p id='refinement-options'> Refinement Options </p>
+                <table id='advanced-search-table'>
+                    <tr>
+                        <div class = 'advanced-search-div'>
+                            <label> Cities: </label>
+                            <div class = 'ui-widget'>
+                                <select class='combobox' id='cities-combobox'>
+                                </select>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class = 'advanced-search-div'>
+                            <label> Materials: </label>
+                            <div class = 'ui-widget'>
+                                <select class='combobox' id='materials-combobox'>
+                                </select>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class = 'advanced-search-div'>
+                            <label> Purposes: </label>
+                            <div class = 'ui-widget'>
+                                <select class='combobox' id='purposes-combobox'>
+                                </select>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class = 'advanced-search-div'>
+                            <label> Year Started: </label>
+                            <div id = 'year-started-text-box'>
+                                <input id = 'started-year-text' type="text">
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <label> Year Completed: </label>
+                        <div id='year-completed-text-box'>
+                            <input id = 'completed-year-text' type="text">
+                        </div>
+                    </tr>
+                    <tr>
+                        <a id="find-rankings-link" onclick='getRankings()'><button class="find-rankings-button">Go</button></a>
+                    </tr>
+        </table>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
+

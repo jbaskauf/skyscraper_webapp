@@ -1,0 +1,329 @@
+Last login: Thu May 10 09:37:54 on ttys001
+eduroam-161-197:webapp_final elliemamantov$ ssh mamantove@perlman.mathcs.carleton.edu
+mamantove@perlman.mathcs.carleton.edu's password: 
+Last login: Wed May  9 14:35:50 2018 from eduroam-161-197.dyn.carleton.edu
+
+This is perlman.mathcs.carleton.edu running CentOS 7.
+
+-bash-4.2$ cd /Accounts/courses/cs257/jondich/web-s2018/mamantove
+-bash-4.2$ cd /Accounts/courses/cs257/jondich/web-s2018/mamantove
+-bash-4.2$ ls
+api.py                     config.py      skyscrapers_cities.csv
+assignments-elliemamantov  materials.csv  skyscrapers.csv
+books-authors              purposes.csv   skyscrapers_materials.csv
+cities.csv                 __pycache__    skyscrapers_purposes.csv
+-bash-4.2$ cd assignments-elliemamantov/
+-bash-4.2$ ls
+Autocomplete  UsingAPIs  webapp  webapp_final
+-bash-4.2$ cd webapp_final
+-bash-4.2$ ls
+api.py         purposes.csv            skyscrapers.csv           templates
+config.py      __pycache__             skyscrapers_purposes.csv  website.py
+materials.csv  skyscrapers_cities.csv  static
+-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 09:46:18] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:46:18] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:46:18] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:49:14] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:51:46] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:52:15] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:04] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:04] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:04] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:04] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 09:53:46] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:46] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:46] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:53:46] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 09:54:14] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:14] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:14] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:18] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:18] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:18] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:24] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:24] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:24] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:27] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:27] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:54:27] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:55:47] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:55:48] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:55:48] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:55:48] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 09:56:18] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:56:19] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:56:19] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:56:19] "GET /favicon.ico HTTP/1.1" 404 -
+^C-bash-4.2python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 09:57:44] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:57:44] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:57:44] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:57:44] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 09:57:54] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:57:54] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:57:54] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:25] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:25] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:28] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:28] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:28] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+^C-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 09:58:37] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:37] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:37] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:42] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:42] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 09:58:42] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+^C-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 10:04:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:06:07] "GET / HTTP/1.1" 200 -
+^C-bash-4.2$ 
+-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 10:07:08] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:07:48] "GET / HTTP/1.1" 200 -
+^C----------------------------------------
+Exception happened during processing of request from ('137.22.161.197', 54684)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.4/socketserver.py", line 305, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 331, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 344, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.4/socketserver.py", line 673, in __init__
+    self.handle()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 232, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib64/python3.4/http/server.py", line 401, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 263, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib64/python3.4/socket.py", line 378, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+----------------------------------------
+^C----------------------------------------
+Exception happened during processing of request from ('137.22.161.197', 54687)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.4/socketserver.py", line 305, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 331, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 344, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.4/socketserver.py", line 673, in __init__
+    self.handle()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 232, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib64/python3.4/http/server.py", line 401, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 263, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib64/python3.4/socket.py", line 378, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+----------------------------------------
+^C----------------------------------------
+Exception happened during processing of request from ('137.22.161.197', 54685)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.4/socketserver.py", line 305, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 331, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 344, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.4/socketserver.py", line 673, in __init__
+    self.handle()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 232, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib64/python3.4/http/server.py", line 401, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 263, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib64/python3.4/socket.py", line 378, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+----------------------------------------
+^C----------------------------------------
+Exception happened during processing of request from ('137.22.161.197', 54688)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.4/socketserver.py", line 305, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 331, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 344, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.4/socketserver.py", line 673, in __init__
+    self.handle()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 232, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib64/python3.4/http/server.py", line 401, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 263, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib64/python3.4/socket.py", line 378, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+----------------------------------------
+^C----------------------------------------
+Exception happened during processing of request from ('137.22.161.197', 54686)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.4/socketserver.py", line 305, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 331, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.4/socketserver.py", line 344, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.4/socketserver.py", line 673, in __init__
+    self.handle()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 232, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib64/python3.4/http/server.py", line 401, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.4/site-packages/werkzeug/serving.py", line 263, in handle_one_request
+    self.raw_requestline = self.rfile.readline()
+  File "/usr/lib64/python3.4/socket.py", line 378, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+----------------------------------------
+^C-bash-4.2$ ^C
+-bash-4.2$ pwd
+/Accounts/courses/cs257/jondich/web-s2018/mamantove/assignments-elliemamantov/webapp_final
+-bash-4.2$ ls
+api.py  config.py  materials.csv  purposes.csv  __pycache__  skyscrapers_cities.csv  skyscrapers.csv  skyscrapers_purposes.csv  static  templates  website.py
+-bash-4.2$ ls static
+skyscrapers.css  skyscrapers.js
+-bash-4.2$ less static/skyscrapers.js 
+-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 10:11:26] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:11:26] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:11:26] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:11:57] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:11:57] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:11:57] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:12:51] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:12:51] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:12:51] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:14:34] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:14:34] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:14:34] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:20:06] "GET / HTTP/1.1" 200 -
+^C-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 10:21:30] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:21:43] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 10:22:44] "GET / HTTP/1.1" 200 -
+^C-bash-4.2$ python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 15:21:33] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:21:33] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:22:15] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:22:15] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:22:15] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:22:16] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:23:50] "GET /skyscrapers HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 15:25:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:25:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:25:48] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:25:48] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:26:05] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:26:12] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:26:14] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:27:25] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:27:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:29:26] "GET / HTTP/1.1" 200 -
+^C-bash-4.2python3 website.py perlman.mathcs.carleton.edu 5223 5123
+ * Running on http://perlman.mathcs.carleton.edu:5223/ (Press CTRL+C to quit)
+137.22.161.197 - - [10/May/2018 15:30:59] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:30:59] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:31:25] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:31:25] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:31:54] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:31:57] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:31:58] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:32:35] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:32:39] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:32:39] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:32:39] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:33:12] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:33:12] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:33:12] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:33:12] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:34:15] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.161.197 - - [10/May/2018 15:34:43] "GET / HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:34:44] "GET /static/skyscrapers.css HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:34:44] "GET /static/skyscrapers.js HTTP/1.1" 200 -
+137.22.161.197 - - [10/May/2018 15:34:44] "GET /favicon.ico HTTP/1.1" 404 -
+137.22.175.169 - - [10/May/2018 15:34:45] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:34:53] "GET / HTTP/1.1" 200 -
+137.22.175.169 - - [10/May/2018 15:34:54] "GET /favicon.ico HTTP/1.1" 404 -
+^C-bash-4.2$ ls
+api.py  config.py  materials.csv  purposes.csv  __pycache__  skyscrapers_cities.csv  skyscrapers.csv  skyscrapers_purposes.csv  static  templates  website.py
+-bash-4.2$ vim materials.csv
+-bash-4.2$ vim purposes.csv
+-bash-4.2$ vim skyscrapers.csv
+
+2377,1550 North Prospect Avenue,0,0,0,36,26
+2378,500 Walnut,0,2015,2017,5,26
+2379,Cityscape Tower 2,0,2008,2014,57,26
+2380,SkyHouse Buckhead,0,2013,2015,9,26
+2381,46-10 Center Boulevard,0,2012,2014,2,25
+2382,901 Harrison Street,0,0,0,12,25
+2383,Klyde Warren Park Tower,0,2015,2017,13,25
+2384,Marina Palms North Tower,0,0,2015,158,25
+2385,Marina Palms South Tower,0,0,2015,158,25
+2386,3Eleven,0,0,0,1,24
+2387,Amergy Tower,0,2015,2016,3,24
+2388,Citi Tower,0,0,0,38,24
+2389,Museum Tower at Centennial Hill,0,0,2002,9,24
+2390,Cyan on Peachtree,0,2014,2015,9,23
+2391,Hartford Marriott Downtown,0,0,2005,48,22
+2392,Icon in the Gulch,0,2006,2008,8,22
+2393,Encore Condominiums,0,0,2008,8,21
+2394,The Ellington,0,0,1923,5,21
+2395,Yard Building,0,2014,2016,44,21
+2396,Grove at Grand Bay North Tower,0,2013,2016,10,20
+2397,Grove at Grand Bay South Tower,0,2013,2016,10,20
+2398,Le Meridian Hotel,0,2015,2017,25,20
+2399,Nissen Building,0,1926,1927,60,20
+2400,The Atlantis Condominiums,0,1980,1982,10,20
+2401,153 Remsen Street,0,0,0,2,19
+2402,City Point Tower I,0,2013,2015,2,19
+2403,Four Seasons Baltimore & Residences,0,2008,2011,47,19
+2404,Halekauwila Place,0,2013,2014,66,19
+2405,Humboldt Bank Building,0,1906,1908,16,19
+2406,Troy Boston,0,0,2015,20,19
+2407,107-115 East Wells Street,0,0,0,36,18
+2408,Binghamton State Office Building,0,1970,1972,159,18
+2409,Joshua Arms,0,0,0,160,18
+2410,The Fifth,0,0,2007,161,18
+2411,Tower Two-Sixty,0,2013,2016,18,18
+2412,101 Seaport,0,0,2015,20,17
+2413,Eighty Seven Park,0,2016,2018,40,17
+2414,Staybridge Suites,0,2007,2008,1,17
+2415,Buffalo General Hospital Building A,0,1982,1986,102,16
+2416,Colony House Condominiums,0,1972,1973,9,15
+2417,North Campus Residence Hall,0,2014,2016,1,15
+2418,Columbia Medical & Graduate Education Building,0,2013,2016,2,14
+2419,Jones Hall,0,0,1939,21,14
+2420,Ohio Public Employees Retirement System,0,2000,2004,41,13
+2421,My Micro NY,0,2014,2015,2,10
+2422,United States Courthouse ?Salt Lake City,0,0,2014,75,10
+2423,"1047 Amsterdam Avenue, East Tower",0,2014,0,2,0
+2424,"1047 Amsterdam Avenue, West Tower",0,2014,0,2,0
+2425,330 Kamakee Street,0,0,0,66,0
+2426,Hallets Point 1,0,0,0,2,0
+2427,Hallets Point 2,0,0,0,2,0
+2428,Hallets Point 3,0,0,0,2,0
+2429,Hallets Point 4,0,0,0,2,0
+2430,Hallets Point 5,0,0,0,2,0
+2431,Hallets Point 6,0,0,0,2,0
+

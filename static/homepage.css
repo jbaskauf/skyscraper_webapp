@@ -1,0 +1,144 @@
+
+body {
+    text-align: center;
+    font-family: palatino linotype;
+}
+
+#site-name {
+    font-size: 38pt;
+    margin: 20px;
+}
+
+#advanced-search-table{
+    justify-content:center;
+    margin: 0px auto;
+    width: 350px;
+    height: 100px;
+    text-align:center;
+    border-collapse:collapse;
+}
+
+#advanced-search-table td{
+    text-align:center
+}
+
+html, body{
+    width: 100%;
+}
+label {display: block; }
+
+a {
+  color: #0B86B5;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: #D8D8D8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#search-box {
+    width: 20%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: palatino linotype;
+}
+
+#started-year-text, #completed-year-text {
+    width: 200px;
+    height: 32px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#started-year-div, #completed-year-div {
+    padding-bottom: 18px;
+}
+
+button {
+    height: 40px;
+    width: 15%;
+    background-color: #4a88e6;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: palatino linotype;
+}
+
+button:hover {
+    background-color: #1851a8;
+}
+
+.find-rankings-button, #search-button {
+    width: 40px;
+}
+
+#advanced-ranking-refinement, #intro, #see-rankings-by, #refine-by {
+    margin: 0px;
+}
+
+#header-div,#search-div, #intro, #advanced-ranking-refinement {
+    background-color: #d6eaff;
+}
+
+#intro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#search-div {
+    padding-bottom:10px;
+}
+
+#header-div {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#intro > p, #header-div > p {
+    margin:0px;
+}
+
+#refine-by {
+    padding-bottom: 15px;
+}
+
+#advanced-ranking-refinement {
+    padding-top: 5px;
+}
+
+.custom-combobox{
+    position:relative;
+    display: inline-block;
+}
+
+.custom-combobox-input{
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+
+p {
+    font-size: 14pt;
+}
+

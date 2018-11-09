@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script>var api_port = {{ api_port }};</script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='homepage.js') }}" defer></script>
+    <title>HighRise</title>
+</head>
+
+<body>
+    <div class="home-page-div" id="header-div">
+        <p id='site-name'>HighRise</p>
+    </div>
+    <div class="home-page-div" id="intro">
+        <p>A fun way to learn about the USA's tallest buildings</p>
+    </div>
+    <div class="home-page-div" id="search-div">
+        <div class="search-container">
+            <input type="text" placeholder="Search for a skyscraper..." id="search-box"><button id = 'search-button' onclick="getSearchResults()">GO</button>
+        </div>
+    </div>
+
+    <div class="home-page-div" id="see-rankings-by">
+        <p>See rankings by:</p>
+        <a href="rankings?tab=height_button"><button>Height</button></a>
+        <a href="rankings?tab=numfloors_button"><button>Number of floors</button></a>
+        <a href="rankings?tab=alphabetical_button"><button>Alphabetical</button></a>
+        <a href="rankings?tab=started_year_button"><button>Year started</button></a>
+        <a href="rankings?tab=completed_year_button"><button>Year completed</button></a>
+    </div>
+
+    <div class="home-page-div" id="refine-by">
+        <p>Or refine by:</p>
+        <a href="cities"><button>Cities</button></a>
+        <a href="materials"><button>Materials</button></a>
+        <a href="purposes"><button>Purposes</button></a>
+    </div>
+
+    <div class="home-page-div" id="advanced-ranking-refinement">
+        <p id= "advanced-ranking-text">Advanced Ranking Refinement</p>
+        <table id='advanced-search-table'>
+            <td>
+                <label> Cities: </label>
+                <div class = 'ui-widget'>
+                    <select class='combobox' id='cities-combobox'>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <label> Materials: </label>
+                <div class = 'ui-widget'>
+                    <select class='combobox' id='materials-combobox'>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <label> Purposes: </label>
+                <div class = 'ui-widget'>
+                    <select class='combobox' id='purposes-combobox'>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <div id='started-year-div'>
+                <label> Year Started: </label>
+                <div id = 'year-started-text-box'>
+                    <input id = 'started-year-text' type="text">
+                </div>
+                </div>
+            </td>
+            <td>
+                <div id='completed-year-div'>
+                <label> Year Completed: </label>
+                <div id='year-completed-text-box'>
+                    <input id = 'completed-year-text' type="text">
+                </div>
+                </div>
+            </td>
+            <td>
+                <a id="find-rankings-link" onclick='getRankings()'><button class="find-rankings-button">GO</button></a>
+            </td>
+        </table>
+    </div>
+  </body>
+</html>

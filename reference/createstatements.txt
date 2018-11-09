@@ -1,0 +1,47 @@
+Ellie Mamantov and Jessie Baskauf
+
+
+CREATE TABLE skyscrapers (
+    id SERIAL,
+    name text,
+    height float, 
+    started_year integer, 
+    completed_year integer,  
+    city_id integer, 
+    number_of_floors integer
+);
+
+CREATE TABLE materials (
+    id SERIAL,
+    name text
+);
+
+CREATE TABLE purposes (
+    id SERIAL,
+    name text
+);
+
+CREATE TABLE cities (
+    id SERIAL,
+    name text
+);
+
+CREATE TABLE skyscrapers_materials (
+    skyscraper_id integer,
+    material_id integer
+);
+
+CREATE TABLE skyscrapers_purposes (
+    skyscraper_id integer,
+    purpose_id integer
+);
+
+CREATE TABLE skyscrapers_cities (
+    skyscraper_id integer,
+    city_id integer
+);
+
+Brief discussion:
+Skyscrapers are our main object.
+Materials, purposes, cities are all linked to multiple skyscrapers and there is a finite number of each of these types. Putting them in their own tables and linking them to the skyscrapers will be better than including all of the information in a single skyscraper table. 
+

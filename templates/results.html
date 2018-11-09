@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='results.css') }}" />
+        <script>var api_port = {{ api_port }};</script>
+        <script type="text/javascript" src="{{ url_for('static', filename='results.js') }}" defer></script>
+        <title>HighRise</title>
+    </head>
+    <body>
+        <div class="header" id='header-bar'>
+            <div class=icon>
+                <a href="/"><button class="home-button">HighRise</button></a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for a skyscraper..." id="search-box">
+                <button id = 'search-button' onclick="getSearchResults()">Go</button>
+            </div>
+        </div>
+        <div class='header' id='searches'>
+            <h1>Search Results</h1>
+        </div>
+        <div id='table_area'>
+            <table id="results_table"></table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,238 @@
+Ellie Mamantov and Jessie Baskauf
+
+API services:
+
+-endpoint: /skyscraper/<skyscraper_id>
+Summary: Given a skyscraper's id, returns information about the specified skyscraper
+Response format: JSON dictionary. The dictionary will have keys "id", "name", "height", "started_year", "completed_year", "city", "country", "number_of_floors", "material", "purpose"
+The "purpose" key will correspond to a list of purposes.
+
+A typical response to a query like /skyscraper/4 will look like this:
+
+{ "id": 4, "name": "One World Trade Center", "height": 541.3, "started_year": 2006, "completed_year": 2014, "city": "New York City", "country": "US", "number_of_floors": 94, "material": "composite", "purpose":
+    [
+        "office"
+    ]
+}
+
+The following endpoints all return a list of skyscrapers. The list can be filtered by any combination of the provided GET parameters
+
+-endpoint: /skyscrapers?ordered_by=height
+-endpoint: /skyscrapers?ordered_by=started_year
+-endpoint: /skyscrapers?ordered_by=completed_year
+-endpoint: /skyscrapers?ordered_by=alphabetical
+-endpoint: /skyscrapers?ordered_by=number_of_floors
+-endpoint: /skyscrapers?ordered_by=construction_period_length
+
+Summary: Returns a list of all skyscrapers in the database ordered by the specified parameter
+height sorts tallest to shortest
+year started or completed sorts earliest to latest
+number of floors sorts greatest to least
+construction period length sorts longest to shortest length of time to construct
+Response format: JSON list of dictionaries. Each dictionary will have keys "id", "name", "height", and the specified parameter (if not height)
+
+A typical response to a query like /skyscrapers?ordered_by=height  will look like this:
+
+[
+    {
+        "id": 1, "name": "The Illinois", "height": 1609.4
+    },
+    {
+        "id": 2, "name": "The Chicago Spire", "height": 609.6
+    }
+    ...
+]
+
+A typical response to a query like /skyscrapers?ordered_by=completed_year will look like this:
+
+[
+    {
+        "id": 1655, "name": "Farmers Bank Building", "height": 105.0, “completed_year”: 1902
+    },
+    {
+        id": 1684, "name": "Wall Street Exchange Building", "height": 103.9, "completed_year": 1903
+    }
+    ...
+]
+
+
+-endpoint: /skyscrapers?completion_status=under_construction
+-endpoint: /skyscrapers?completion_status=vision
+-endpoint: /skyscrapers?completion_status=completed
+-endpoint: /skyscrapers?completion_status=demolished
+Summary: Returns a list of skyscrapers given a specific completion status. The default ordering property is height. The four completion status options are under_construction,  vision, demolished, and completed.
+Skyscrapers with completion status=vision were projects that were abandoned, never started, or proposed.
+Skyscrapers with completion status=under_construction also includes skyscrapers that are architecturally/structurally topped out or on hold
+Response format: JSON list of dictionaries. Each dictionary will have keys "id", "name", "height"
+
+A typical response to a query like /skyscrapers?completion_status=completed will look like this:
+
+[
+    {
+        "id": 4, "name": "One World Trade Center", "height": 541.3
+    },
+    {
+        "id": 8, "name": "Willis Tower", "height": 442.1
+    }
+    ...
+]
+
+Additional search parameter options: 
+
+-endpoint: /skyscrapers?city_id=<city_id>
+Summary: Returns a list of skyscrapers in a specified city. The default ordering property is height.
+Response format: JSON list of dictionaries. Each dictionary will have keys "id", "name", "height"
+
+A typical response to a query like /skyscrapers?ordered_by=height&city_id=2 (where New York City = 2) will look like this:
+
+[
+    {
+        "id": 4, "name": "One World Trade Center", "height": 541.3
+    },
+    {
+        "id": 5, "name": "Central Park Tower", "height": 541.0
+    }
+    ...
+]
+
+-endpoint: /skyscrapers?started_year=<year>
+-endpoint: /skyscrapers?completed_year=<year>
+Summary: Returns a list of skyscrapers whose construction was started/completed in the specified year. The default ordering property is height. 
+Note: <year> can be a range. For example, year_started=1940-1960 would return a list of skyscrapers that were started between 1940 and 1960; (unsure how to implement; may need different parameter syntax)
+Response format: JSON list of dictionaries. Each dictionary will have keys "id", "name", "height"
+
+A typical response to a query like /skyscrapers?completed_year=1960 will look like this:
+
+[
+    {
+        "id": 174, "name": "JP Morgan Chase Tower", "height": 215.5
+    },
+    {
+        "id": 516, "name": "1285 Avenue of the Americas", "height": 164.6
+    }
+    ...
+]
+
+
+-endpoint: /skyscrapers?purpose=<purpose>
+Summary: Returns a list of skyscrapers that are used for the specified purpose. The default ordering property is height. 
+The options of purpose are: air traffic control tower, belltower, bridge, casino, commercial, education, exhibition, government, hospital, hotel, industrial, library, museum, office, religious, residential, retail, serviced apartments, telecommunications
+Response format: JSON list of dictionaries. Each dictionary will have keys "id", "name", "height"
+
+A typical response to a query like /skyscrapers?purpose=casino will look like this:
+
+[
+    {
+        "id": 164, "name": "Revel Resort and Casino", "height": 218.9
+    },
+    {
+        "id": 211, "name": "Resorts World Las Vegas Tower I", "height": 205.4
+    }
+    ...
+]
+
+-endpoint: /skyscrapers?material=<material>
+ Summary: Returns a list of skyscrapers that are built out of the specified material. The default ordering property is height. 
+The options of material are: concrete, steel, composite, masonry, precast
+
+A typical response to a query like /skyscrapers?material=steel will look like this:
+
+[
+    {
+        "id": 1, "name": "The Illinois", "height": 1609.4
+    },
+    {
+        "id": 6, "name": "World Trade Building", "height": 518.0
+    }
+    ...
+]
+
+
+
+
+Examples of API use for user stories:
+
+Person looks up a ranking of the tallest buildings in the United States.
+Endpoint to be used: 
+/skyscrapers?ordered_by=height
+
+Person looks up a ranking of the tallest buildings in Chicago.
+Endpoint to be used: 
+/skyscrapers?ordered_by=height&city=Chicago
+
+Person looks up a ranking of the tallest buildings in New York.
+Note: after consideration, our dataset does not support this feature
+
+Person searches for information about the One World Trade Center (height, year constructed, location, number of floors).
+Endpoint to be used: 
+/skyscraper/One_World_Trade_Center
+
+Person searches for a timeline of when different skyscrapers in the United States (or Chicago, or New York) were built. 
+Endpoints that could be used: 
+/skyscrapers?ordered_by=year_completed&city=Chicago
+/skyscrapers?ordered_by=year_completed
+
+Person looks up an alphabetical list of skyscrapers in United States  (or Chicago, or New York).
+Endpoint to be used:
+/skyscrapers?ordered_by=alphabetical&city=Chicago
+/skyscrapers?ordered_by=alphabetical
+
+Person searches for a list of skyscrapers completed in 1952.
+Endpoint to be used:
+/skyscrapers?year_completed=1952
+
+Person searches for a list of skyscrapers that started being built in 1940.
+Endpoint to be used: 
+/skyscrapers?year_started=1940
+
+Person searches for a list of skyscrapers completed between 1940 and 1960.
+Endpoint to be used:
+/skyscrapers?year_completed=1940-1960 *
+
+Person searches for a list of skyscrapers in Minnesota that were built in 1960.
+Note: no longer supports state function; changed to Minneapolis
+Endpoint to be used:
+/skyscrapers?year_completed=1960&city=Minneapolis
+
+Person looks up how many skyscrapers are in Minnesota. 
+Note: after reconsideration, this story will use the same endpoint as the list function. In final implementation of website, the list will be numbered and/or the total number of skyscrapers in the list will be provided
+
+Person searches for a list of skyscrapers that are under construction.
+Endpoint to be used:
+/skyscrapers?completion_status=under_construction
+
+Person searches for a list of never completed skyscrapers.
+Endpoint to be used:
+/skyscrapers?completion_status=vision
+
+Person looks up a ranking of buildings by number of floors in the United States.
+Endpoint to be used:
+/skyscrapers?ordered_by=number_of_floors
+
+Person searches for a list of skyscrapers that people can live in.
+Endpoint to be used:
+/skyscrapers?purpose=residential
+
+Person searches for a list of skyscrapers that serve as hotels. 
+Endpoint to be used:
+/skyscrapers?purpose=hotel
+
+Person searches for a list of skyscrapers that took 8 years to build.
+Note: after consideration, we've decided that it would be more useful to be able to find a list of skyscrapers ordered by the amount of time it took to built them. The endpoint has been adjusted to reflect that
+Endpoint to be used:
+/skyscrapers?ordered_by=construction_period_length
+
+Person searches for a list of skyscrapers built out of steel. 
+Endpoint to be used:
+/skyscrapers?material=steel
+
+Person searches for skyscrapers in Northfield, MN and finds none.
+Endpoint to be used:
+/skyscrapers?city=Northfield
+
+Person searches for information about a skyscraper that doesn’t exist and finds nothing.
+Endpoint to be used:
+/skyscraper/"Watson Hall"
+
+
+
