@@ -4,7 +4,7 @@ High Rise is a full-stack web application linked to a database of skyscrapers an
 ## Features
 
 ## Repo structure
-'''
+```
 ├── README.md                 : Description of this repository
 ├── api.py                    : Flask app for the HTTP-based API with JSON access to skyscraper data
 ├── website.py                : Flask app linking API to website for user browsing of data
@@ -17,7 +17,7 @@ High Rise is a full-stack web application linked to a database of skyscrapers an
 ├── static                    : Static files (.css and .js)
 ├── templates                 : HTML layout files
 └── .gitignore                : Files and directories to be ignored by git
-'''
+```
 
 ## Usage
 
