@@ -6,7 +6,7 @@ A rich dataset of skyscraper information stored in a normalized PostgreSQL datab
 
 An HTTP-based API allows JSON access to the dataset. A detailed description of the API endpoints can be found in `reference/APIservices.txt`, and the Flask app for the API can be found in `api.py`.
 
-An interactive web interface for easy user browsing of data. The user can see a ranking of skyscrapers based on their height, number of floors, year construction was started or completed, or alphabetical order. They can view all available information about a specific skyscraper from the rankings page or any other page with listings of specific skyscrapers. They can also refine the ranking listing to show only skyscrapers in a certain city, built in a certain year, built of a specific material (e.g. steel), or used for a specific purpose (e.g. belltower). Users can browse the lists of cities, materials, and purposes, or search for a specific skyscraper.
+An interactive web interface for easy user browsing of data. The user can see a ranking of skyscrapers based on their height, number of floors, year construction was started or completed, or alphabetical order. They can view all available information about a specific skyscraper by clicking on a skyscraper from the rankings page or any other page with listings of specific skyscrapers. They can also refine the ranking listing to show only skyscrapers in a certain city, built in a certain year, built of a specific material (e.g. steel), or used for a specific purpose (e.g. belltower). Users can browse the lists of cities, materials, and purposes, or search for a specific skyscraper.
 
 The HTML layout files, stylesheets, and Javascript files for the webpages can be found in the `templates` and `static` folders.
 
@@ -18,7 +18,7 @@ The HTML layout files, stylesheets, and Javascript files for the webpages can be
 ├── README.md                 : Description of this repository
 ├── api.py                    : Flask app for the HTTP-based API with JSON access to skyscraper data
 ├── website.py                : Flask app linking API to website for user browsing of data
-├── data                      : Raw data and postgreSQL table contents in CSV form, .sql dump file, and rawdata converter .py file
+├── data                      : Raw data and postgreSQL table contents in CSV form, .sql dump file, and raw data converter .py file
 ├── reference                 : Reference files from database, API, and UI design planning stages
 │   ├── mockups               : Mockup drawings for primary webpages
 │   ├── APIservices.txt       : Detailed descriptions of API endpoints, corresponding query responses, and usage examples
@@ -34,6 +34,7 @@ The HTML layout files, stylesheets, and Javascript files for the webpages can be
 
 Access the webapp at:
 http://perlman.mathcs.carleton.edu:5203/ (port no longer active)
+
 Access the API at:
 http://perlman.mathcs.carleton.edu:5103/ (port no longer active)
 
