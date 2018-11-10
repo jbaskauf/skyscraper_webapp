@@ -1,0 +1,20 @@
+Things we wish we could have improved given more time and knowledge include:
+
+-In the search box, you can only search with one word, otherwise you get no results even if there should be (for example, searching for "Willis Tower" should return a result but does not).
+
+-When you click on the 'GO' button connected to the search box without any input in the search box, you are redirected to Page Not Found. We think this could be resolved by checking to see if the search string is empty and returning the list of all skyscrapers if that was the case. 
+
+-Several of the Javascript functions, mainly in rankings.js, used a lot of repetitive lines of code that could have been simplified or even combined into a single, more versatile function.
+
+-The drop down menu arrows on the homepage show up underneath their text boxes rather than to their right. This is because we used a jQuery function, which we did not cover in class, and were unsure of how to fully debug this problem.
+
+-Similarly, on the homepage, we would like the drop down advanced search menus to "drop up", aka show the option list above the box rather than below. But we didn't know how to do that with JQuery.
+
+-Ideally, when you come to the rankings page via the home page 'ordering buttons', the corresponding tab would already be highlighted. Currently, the tabs only get highlighted when they are clicked on from the rankings page. 
+
+-If you click on a ordering tab in the rankings page or use a refinement option, the URL of the page should switch to reflect these parameters. This would be useful when returning to the rankings page from a specific skyscraper page, as it would remember your last refinement. 
+
+-On the singular skyscraper pages, the light blue box around the name and city is not perfectly formatted. We did not want it to expand into the header bar, but couldn't figure out why it was doing that.
+
+-Ideally, in the cities page, the cities would be listed alphabetically to make it easier for the user to find a certain city. However, we could not figure out how to do this without messing up the functionality of the page.
+
